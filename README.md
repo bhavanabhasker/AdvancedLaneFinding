@@ -102,7 +102,7 @@ The image below is the output from the fit_poly() function
 
 #### 1. Video Link 
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](project_video.mp4)
 
 ---
 
