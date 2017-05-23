@@ -44,7 +44,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 The function `cv2.calibrateCamera()` returns the camera matrix, distortion coefficients , row and translation vectors. I used the camera matrix, distortion coefficients retrieved from the Camera calibrate function and passed the parameters to `cv2.undistort` function to retrieve the distortion corrected image below 
 
-![alt text][image2]
+![alt text][image7]
 
 #### 2. Color transforms, gradient to create the thresholded image 
 I tried to convert the image from RGB to HLS format. I found that `S` component helped to identify the lanes clearly compared to `H` and `L` format. Futher, I applied cv2.sobel() on the `S` component to get the both colored and combined binary. I used a combination of color and gradient thresholds to generate a binary image (thresholding function can be found in cell 14 in `AdvancedLaneFinding.ipynb`.  Here's an example of my output for this step.  
